@@ -1,6 +1,15 @@
 /* body {
   background-color: #f3f4f7 !important;
 } */
+.sidebar-fixed.show {
+  inset-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
+}
+
+.c-sidebar-preload {
+  transition: none !important;
+  transform: translateX(-100%) !important;
+}
 
 .chart_list .card-body>div:first-child {
   position: absolute;

@@ -46,7 +46,16 @@ const AppHeader = () => {
     document.addEventListener('scroll', handleScroll)
     return () => document.removeEventListener('scroll', handleScroll)
   }, [])
-
+  
+  useEffect(() => {
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar) {
+      // pre-load transition
+      sidebar.classList.add('c-sidebar-preload');
+      void sidebar.offsetHeight;
+      sidebar.classList.remove('c-sidebar-preload');
+    }
+  }, []);
   return (
     <CHeader position="sticky" className="mb-4 p-0" ref={headerRef}>
       <CContainer className="border-bottom px-4" fluid>

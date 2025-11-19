@@ -73,14 +73,8 @@ const RadialGauge = ({ value, label, color }) => (
 const Dashboard = () => {
     const [selectedDate, setSelectedDate] = useState(new Date())
     const [showPicker, setShowPicker] = useState(false)
-    const [loaded, setLoaded] = useState(false)
     const widgetChartRefTop1 = useRef(null)
     const widgetChartRefTop2 = useRef(null)
-
-    useEffect(() => {
-        const timer = setTimeout(() => setLoaded(true), 500)
-        return () => clearTimeout(timer)
-    }, [])
 
     useEffect(() => {
         document.documentElement.addEventListener('ColorSchemeChange', () => {
