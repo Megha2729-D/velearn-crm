@@ -70,7 +70,7 @@ const RadialGauge = ({ value, label, color }) => (
     </div>
 )
 
-const Dashboard = () => {
+const AdminDashboard = () => {
     const [selectedDate, setSelectedDate] = useState(new Date())
     const [showPicker, setShowPicker] = useState(false)
     const widgetChartRefTop1 = useRef(null)
@@ -845,4 +845,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default AdminDashboard

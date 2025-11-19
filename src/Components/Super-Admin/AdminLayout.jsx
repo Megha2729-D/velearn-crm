@@ -1,0 +1,21 @@
+import AppHeader from "./AppHeader";
+import AppSidebar from "./AppSidebar";
+import AppFooter from "./AppFooter";
+import { Outlet } from "react-router-dom";
+
+const AdminLayout = () => {
+    return (
+        <div className="d-flex">
+            <AppSidebar />
+            <div className="wrapper d-flex flex-column min-vh-100">
+                <AppHeader />
+                <div className="body flex-grow-1 px-4">
+                    <Outlet />
+                </div>
+                <AppFooter />
+            </div>
+        </div>
+    );
+};
+
+export default AdminLayout;

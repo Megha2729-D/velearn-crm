@@ -54,6 +54,19 @@
   height: 5px !important;
 }
 
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  box-shadow: none !important;
+  border: 1px solid #2e2e2e;
+  border-color: #2e2e2e !important;
+}
+
+td {
+  font-size: 14px;
+}
+
 @media screen and (max-width: 991px) {
   .footer {
     justify-content: center;
