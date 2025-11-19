@@ -31,7 +31,7 @@ const AppSidebar = () => {
         dispatch({ type: 'set', sidebarShow: visible })
       }}
     >
-      <CSidebarHeader className="border-bottom justify-content-center bg-white">
+      <CSidebarHeader className="border-bottom justify-content-center bg-dark">
         <CSidebarBrand to="/">
           <img src="/assets/images/velearn-logo.png" height={50} alt="" />
           {/* <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} /> */}
