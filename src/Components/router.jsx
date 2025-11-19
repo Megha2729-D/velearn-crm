@@ -12,6 +12,7 @@ const AppRouter = () => (
             <div className="body flex-grow-1 px-4">
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
+                    <Route path="/dashboard" element={<Dashboard />} />
                 </Routes>
             </div>
             <AppFooter />

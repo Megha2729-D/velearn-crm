@@ -32,12 +32,8 @@
   height: 100% !important;
 }
 
-.bg-royalblue {
-  background-color: #0056ad !important;
-}
-
-.bg-c1 {
-  background-color: #21346a !important;
+.bg-primary {
+  background-color: #5856d6 !important;
 }
 
 .progress,

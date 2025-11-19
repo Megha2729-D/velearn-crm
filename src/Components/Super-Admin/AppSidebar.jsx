@@ -33,7 +33,7 @@ const AppSidebar = () => {
     >
       <CSidebarHeader className="border-bottom justify-content-center bg-white">
         <CSidebarBrand to="/">
-          <img src={`${process.env.PUBLIC_URL}/assets/images/velearn-logo.png`} height={50} alt="" />
+          <img src="/assets/images/velearn-logo.png" height={50} alt="" />
           {/* <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} /> */}
           <CIcon customClassName="sidebar-brand-narrow" icon={`${process.env.PUBLIC_URL}/assets/brand/sygnet.js`} height={32} />
         </CSidebarBrand>
