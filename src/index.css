@@ -54,6 +54,16 @@
   height: 5px !important;
 }
 
+.card input,
+.card select,
+.card textarea {
+  font-size: 13px;
+}
+
+.card button {
+  font-size: 14px;
+}
+
 input:focus,
 textarea:focus,
 select:focus,
@@ -65,6 +75,86 @@ button:focus {
 
 td {
   font-size: 14px;
+}
+
+input,
+select {
+  border-radius: 0;
+}
+
+.form-item {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-item input,
+.form-item select {
+  height: 40px;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item select {
+  height: 40px;
+  padding: 0 15px;
+}
+
+.form-item select {
+  background-color: transparent;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+  display: block;
+  width: 100%;
+  color: #272727;
+  background: transparent;
+  border-radius: 0 !important;
+  border: 1px solid #999 !important;
+  transition: all .3s ease;
+}
+
+.form-item input:focus-visible,
+.form-item select:focus-visible,
+.form-item textarea:focus-visible {
+  border: 1px solid #3d3d3d !important;
+  border-radius: 0 !important;
+}
+
+select option {
+  color: #000000;
+  /* color of the options in the dropdown list */
+}
+
+.form-item textarea {
+  height: 54px;
+  resize: none;
+  padding: 10px 15px;
+}
+
+.form-item input:focus+label,
+.form-item input:not(:placeholder-shown)+label,
+.form-item select:focus+label,
+.form-item select:not(:placeholder-shown)+label,
+.form-item textarea:focus+label,
+.form-item textarea:not(:placeholder-shown)+label {
+  font-size: 11px;
+  top: -8px;
+}
+
+.form-item label {
+  position: absolute;
+  cursor: text;
+  z-index: 1;
+  top: 13px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #ffffff;
+  padding: 0 3px;
+  color: #999;
+  transition: all .3s ease;
 }
 
 @media screen and (max-width: 991px) {

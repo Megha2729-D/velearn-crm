@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
     CCard,
     CCardHeader,
@@ -154,18 +155,23 @@ const Leads = () => {
                 {/* HEADER */}
                 <CCardHeader className="w-100 d-flex justify-content-between flex-column flex-lg-row align-items-start align-items-lg-center">
 
-                    <CRow className="align-items-center">
-                        <CCol sm={6} md={6} xl={6} className="my-2">
+                    <CRow className="align-items-center w-100 m-auto">
+                        <CCol sm={6} md={6} xl={2} className="my-2">
                             <h5 className="m-0 text-start">Leads List</h5>
                         </CCol>
-                        <CCol sm={6} md={6} xl={6} className="my-2">
+                        <CCol sm={12} md={12} xl={2} className="text-end my-2 d-block d-lg-none">
+                            <Link to={'/tele-caller/add-leads'}>
+                                <CButton color="primary">+ Add New Lead</CButton>
+                            </Link>
+                        </CCol>
+                        <CCol sm={6} md={6} xl={4} className="my-2">
                             <CFormInput
                                 placeholder="Search name, email, phone..."
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
                             />
                         </CCol>
-                        <CCol sm={12} md={12} xl={4} className="my-2">
+                        <CCol sm={12} md={12} xl={2} className="my-2">
                             <CFormSelect value={tagFilter} onChange={(e) => setTagFilter(e.target.value)}>
                                 <option value="">Filter by Tag</option>
                                 <option value="Hot">Hot</option>
@@ -173,7 +179,7 @@ const Leads = () => {
                                 <option value="Cold">Cold</option>
                             </CFormSelect>
                         </CCol>
-                        <CCol sm={12} md={12} xl={4} className="my-2">
+                        <CCol sm={12} md={12} xl={2} className="my-2">
                             <CFormSelect
                                 value={sourceFilter}
                                 onChange={(e) => setSourceFilter(e.target.value)}
@@ -187,8 +193,10 @@ const Leads = () => {
                                 <option value="LinkedIn Outreach">LinkedIn Outreach</option>
                             </CFormSelect>
                         </CCol>
-                        <CCol sm={12} md={12} xl={4} className="text-end my-2">
-                            <CButton color="primary">+ Add New Lead</CButton>
+                        <CCol sm={12} md={12} xl={2} className="text-end my-2 d-none d-lg-block">
+                            <Link to={'/tele-caller/add-leads'}>
+                                <CButton color="primary">+ Add New Lead</CButton>
+                            </Link>
                         </CCol>
                     </CRow>
                 </CCardHeader>

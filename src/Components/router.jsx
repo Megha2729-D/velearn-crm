@@ -5,6 +5,7 @@ import TeleLayout from "./TeleCaller/TeleLayout";
 import AdminDashboard from "./Super-Admin/AdminDashboard";
 import TeleDashboard from "./TeleCaller/TeleCallerDashboard";
 import Leads from "./TeleCaller/Leads";
+import AddLeads from "./TeleCaller/AddLead";
 
 const AppRouter = () => (
     <Router>
@@ -22,6 +23,7 @@ const AppRouter = () => (
                 <Route index element={<TeleDashboard />} />
                 <Route path="dashboard" element={<TeleDashboard />} />
                 <Route path="follow-up" element={<Leads />} />
+                <Route path="add-leads" element={<AddLeads />} />
                 {/* more telecaller pages */}
             </Route>
 
