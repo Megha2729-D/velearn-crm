@@ -3,7 +3,7 @@
   $enable-deprecation-messages: false
 );
 @use "@coreui/coreui/scss/mixins/breakpoints" as *;
-@use "@coreui/coreui/scss/mixins/color-mode" as *;
+// @use "@coreui/coreui/scss/mixins/color-mode" as *;
 
 .example {
   &:not(:first-child) {
