@@ -1,0 +1,52 @@
+.chart_list .card-body>div:first-child {
+  position: absolute;
+  bottom: 10px;
+}
+
+.chart_list .card-body>div:last-child {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  right: 15px;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.react-datepicker {
+  position: absolute;
+  top: 10px;
+}
+
+.header-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb {
+  font-size: 14px !important;
+}
+
+.card {
+  height: 100% !important;
+}
+
+.bg-royalblue {
+  background-color: #0056ad !important;
+}
+
+.bg-c1 {
+  background-color: #21346a !important;
+}
+
+.progress,
+.progress-bar {
+  height: 5px !important;
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    justify-content: center;
+  }
+}
