@@ -1,6 +1,6 @@
-import AppHeader from "./AppHeader";
-import AppSidebar from "./AppSidebar";
-import AppFooter from "./AppFooter";
+import AppHeader from "../AppHeader";
+import AppSidebar from "../AppSidebar";
+import AppFooter from "../AppFooter";
 import { Outlet } from "react-router-dom";
 
 const AdminLayout = () => {

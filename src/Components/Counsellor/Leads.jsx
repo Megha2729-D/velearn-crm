@@ -20,7 +20,7 @@ import CIcon from "@coreui/icons-react";
 import { cilPeople } from "@coreui/icons";
 import { useState, useEffect } from "react";
 
-const TeleLeads = () => {
+const CounsellorLeads = () => {
     const leadsData = [
         {
             avatar: { src: '/assets/images/avatars/1.jpg', status: 'danger' },
@@ -194,7 +194,7 @@ const TeleLeads = () => {
                             </CFormSelect>
                         </CCol>
                         <CCol sm={12} md={12} xl={2} className="text-end my-2 d-none d-lg-block">
-                            <Link to={'/tele-caller/add-leads'}>
+                            <Link to={'/counsellor/add-leads'}>
                                 <CButton color="primary">+ Add New Lead</CButton>
                             </Link>
                         </CCol>
@@ -350,4 +350,4 @@ const TeleLeads = () => {
     );
 };
 
-export default TeleLeads;
+export default CounsellorLeads;

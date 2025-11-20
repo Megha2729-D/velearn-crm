@@ -13,7 +13,7 @@ import CIcon from '@coreui/icons-react'
 
 import { AppSidebarNav } from './AppSidebarNav'
 // sidebar nav config
-import Navigation from './nav'
+import Navigation from './Counsellor/nav'
 
 const AppSidebar = () => {
   const dispatch = useDispatch()

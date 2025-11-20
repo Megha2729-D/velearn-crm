@@ -14,7 +14,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilPeople } from '@coreui/icons'
 
-const AddTeleLeads = () => {
+const CounsellorAddLeads = () => {
     const [leadData, setLeadData] = useState({
         name: '',
         email: '',
@@ -202,4 +202,4 @@ const AddTeleLeads = () => {
 
 }
 
-export default AddTeleLeads
+export default CounsellorAddLeads

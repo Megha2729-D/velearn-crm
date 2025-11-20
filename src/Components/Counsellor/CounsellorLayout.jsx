@@ -3,7 +3,7 @@ import AppSidebar from "../AppSidebar";
 import AppFooter from "../AppFooter";
 import { Outlet } from "react-router-dom";
 
-const TeleLayout = () => {
+const CounsellorLayout = () => {
     return (
         <div className="d-flex">
             <AppSidebar />
@@ -18,4 +18,4 @@ const TeleLayout = () => {
     );
 };
 
-export default TeleLayout;
+export default CounsellorLayout;
