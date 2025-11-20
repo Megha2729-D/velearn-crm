@@ -7,6 +7,7 @@ import { Provider } from 'react-redux'
 import store from './Components/Super-Admin/Store';
 import './scss/style.scss'
 import './scss/examples.scss'
+import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
